@@ -1,7 +1,6 @@
-class CreateFans < ActiveRecord::Migration[5.1]
+class CreateReviewers < ActiveRecord::Migration[5.1]
   def change
-    create_table :fans do |t|
-      t.string :surname
+    create_table :reviewers do |t|
       t.string :name
       t.references :author, foreign_key: true
 
